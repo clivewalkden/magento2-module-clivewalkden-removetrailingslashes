@@ -1,0 +1,37 @@
+{
+    "name": ":vendor_slug/:package_slug",
+    "description": ":package_description",
+    "keywords": [
+        "magento2-module",
+        ":vendor_slug",
+        ":package_slug"
+    ],
+    "type": "magento2-module",
+    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "authors": [
+        {
+            "name": ":author_name",
+            "email": "author@domain.com",
+            "homepage": ":author_website",
+        }
+    ],
+    "license": "OSL-3.0",
+    "require": {
+        "magento/framework": ">=103.0.3",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "VendorName\\Skeleton\\": ""
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ]
+}
